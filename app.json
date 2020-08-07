@@ -4,9 +4,9 @@
     "slug": "my-car-spot-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./public/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./public/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,10 +17,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "io.mycarspot.app"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./public/favicon.png"
+    },
+    "android": {
+      "package": "io.mycarspot.app"
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
   }
 }
